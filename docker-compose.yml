@@ -8,7 +8,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/App
-    command: uvicorn App.api:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn App/api:app --host 0.0.0.0 --port 8000 --reload
     environment:
       - PYTHONUNBUFFERED=1
      # If you have environment variables in a .env file, it will be loaded automatically
