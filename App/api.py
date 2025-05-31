@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 import numpy as np
 import pandas as pd 
 import os
-from Api.processing import process_image
+from App.processing import process_image
 from PIL import Image
 from dotenv import load_dotenv
 from supabase import create_client, Client
